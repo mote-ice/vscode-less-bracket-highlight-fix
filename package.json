@@ -1,0 +1,29 @@
+{
+  "name": "less-bracket-fix",
+  "displayName": "Local Less Bracket Highlight Fix",
+  "description": "Fix nested parentheses highlight in Less",
+  "publisher": "local-dev",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mote-ice/vscode-less-bracket-highlight-fix.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "source.css.less.bracket-fix",
+        "path": "./syntaxes/less-fix.tmLanguage.json",
+        "injectTo": [
+          "source.css.less",
+          "text.html.vue"
+        ]
+      }
+    ]
+  }
+}

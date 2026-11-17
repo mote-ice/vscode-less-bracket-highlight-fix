@@ -1,0 +1,11 @@
+<style lang="less" scoped>
+  .wrapper {
+    clip-path: polygon(0 0,
+        100% 0,
+        100% calc(100% - 4px),
+        calc(100% - 4px) 100%,
+        4px 100%,
+        0 calc(100% - 4px));
+    font-size: 13px;
+  }
+</style>

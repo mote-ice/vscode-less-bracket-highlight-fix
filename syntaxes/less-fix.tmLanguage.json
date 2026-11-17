@@ -1,0 +1,45 @@
+{
+  "scopeName": "source.css.less.bracket-fix",
+  "injectionSelector": "L:source.css.less -comment -string, L:meta.property-value.less -comment -string",
+  "patterns": [
+    {
+      "include": "#balanced-css-function"
+    }
+  ],
+  "repository": {
+    "balanced-css-function": {
+      "begin": "\\b([a-zA-Z0-9_-]+)\\s*(\\()",
+      "beginCaptures": {
+        "1": {
+          "name": "support.function.misc.css"
+        },
+        "2": {
+          "name": "punctuation.section.function.begin.bracket.round.css"
+        }
+      },
+      "end": "\\)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.function.end.bracket.round.css"
+        }
+      },
+      "name": "meta.function.misc.css",
+      "patterns": [
+        {
+          "include": "#balanced-css-function"
+        },
+        {
+          "include": "source.css.less#property-values"
+        },
+        {
+          "match": "\\s+",
+          "name": "meta.function-call.arguments.less"
+        },
+        {
+          "match": "[^()]",
+          "name": "meta.function-call.arguments.less"
+        }
+      ]
+    }
+  }
+}
