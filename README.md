@@ -140,7 +140,7 @@ code --install-extension /tmp/less-bracket-fix.vsix --force
 
 ## 许可证
 
-MIT License，版权归 mote-ice 所有。详见 [LICENSE](LICENSE)。
+MIT License，版权归 mote-ice 所有。详见 [LICENSE](https://github.com/mote-ice/vscode-less-bracket-highlight-fix/blob/main/LICENSE)。
 
 ## 版本记录
 
